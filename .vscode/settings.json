@@ -1,0 +1,4 @@
+{
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "java.configuration.updateBuildConfiguration": "interactive"
+} //isso vai servir para adicionar cores ao terminal do vscode

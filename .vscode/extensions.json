@@ -1,0 +1,7 @@
+// isso serve para quando a pessoa abrir o projeto, essas extensões serem recomendadas para ela instalar.
+{
+    "recommendations": [
+        "vscjava.vscode-java-pack",
+        "sohibe.java-generate-setters-getters",
+    ]
+}
