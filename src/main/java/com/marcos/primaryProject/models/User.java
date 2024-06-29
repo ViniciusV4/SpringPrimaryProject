@@ -10,6 +10,9 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.mapping.List;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.Objects;
 
 // dizendo que isso é uma entidade, ou seja, uma tabela no banco de dados;
@@ -46,6 +49,7 @@ public class User {
     // que não pode ser nula;
     // e que tem um tamanho de 60 caracteres;
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Column(name = "password", length = 60, nullable = false)
     @NotNull(groups = {CreateUser.class, UpdateUser.class})
     @NotEmpty(groups = {CreateUser.class, UpdateUser.class})
